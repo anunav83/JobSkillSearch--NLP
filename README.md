@@ -4,20 +4,19 @@ This project has 2 goals
   * Identify the most common list of skills associated to the job tile. 
   * Refine the search results of a job title. e.g 'Data Scientist' job search does not resturn results such as "Optical Research   Scientist"
   
-  ![Test Image 4](https://github.com/anunav83/JobSkillSearch--NLP/tree/master/Images/JobSearchResults.png)
-
-
-### Problem Summary:
+  <img src="Images/JobSearchResults.png" />
+ 
+ ### Problem Summary:
 
 * Goal 1: Get the list of technical skills associated to a job title.
 Using web scrapping package BeautifulSoup, we collect all job listings associated with the job title from major jobs website.
 
-![Image](https://github.com/anunav83/JobSkillSearch--NLP/tree/master/Images/)
+  <img src="Images/JobSearchResults-BeautifulSoup.png" />
 
 
 We shall then tokenize the words in the job listings and using NLTK packages remove any stop words, punctuations etc(pre-processsing). Using Word2Vec model (skip gram algorithm) identify the technical skills required for that job title. Below is the TNSE graph of the words obtained. 
 
-![Image](https://github.com/anunav83/JobSkillSearch--NLP/tree/master/Images/)
+<img src="Images/Words.png" />
 
 The Word2Vec model uses close to 5000 words from 218 job descriptions. 
 
@@ -25,10 +24,9 @@ The Word2Vec model uses close to 5000 words from 218 job descriptions.
 * Goal 2: Refine search results based on the skills.
 Scan through each Job listing in the dataset to find if it has at least two of the skills listed below. If the job does not have it, it is flagged as erroneous. The resulting dataset will be used as the input to train our model, where target is the flag which indicates if job listing is erroneous or not.
 
-![Image](https://github.com/anunav83/JobSkillSearch--NLP/tree/master/Images/)
+<img src="Images/JobListExcel.png" />
 
-
-![Image](https://github.com/anunav83/JobSkillSearch--NLP/tree/master/Images/)
+<img src="Images/WordFreq.png" />
 
 
 * Goal 3: Based on the Job description text, identify appropriate Job Title.
