@@ -3,8 +3,9 @@
 This project has 2 goals
   * Identify the most common list of skills associated to the job tile. 
   * Refine the search results of a job title. e.g 'Data Scientist' job search does not resturn results such as "Optical Research   Scientist"
+  
+  ![Test Image 4](https://github.com/anunav83/JobSkillSearch--NLP/tree/master/Images/JobSearchResults.png)
 
-![alt text](https://raw.githubusercontent.com/anunav83/JobSkillSearch--NLP/tree/master/Images/JobSearchResults.png)
 
 ### Problem Summary:
 
