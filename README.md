@@ -9,12 +9,12 @@ This project has 2 goals
  ### Problem Summary:
 
 * Goal 1: Get the list of technical skills associated to a job title.
-Using web scrapping package BeautifulSoup, we collect all job listings associated with the job title from major jobs website.
+Using web scrapping package <b>BeautifulSoup</b>, we collect all job listings associated with the job title from major jobs website.
 
   <img src="Images/JobSearchResults-BeautifulSoup.png" />
 
 
-We shall then tokenize the words in the job listings and using NLTK packages remove any stop words, punctuations etc(pre-processsing). Using Word2Vec model (skip gram algorithm) identify the technical skills required for that job title. Below is the TNSE graph of the words obtained. 
+We shall then tokenize the words in the job listings and using <b>NLTK packages</b> remove any stop words, punctuations etc(pre-processsing). Using <b>Word2Vec model (skip gram algorithm)</b> identify the technical skills required for that job title. Below is the TNSE graph of the words obtained. 
 
 <img src="Images/Words.png" />
 
